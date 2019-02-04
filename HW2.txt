@@ -1,0 +1,22 @@
+INPUT
+-----
+
+print(1, minFunc(2, "(1) d (0,3)") )
+print(2, minFunc(2, "(1,2) d -") )
+print(3, minFunc(3, "(3,4,7) d (1,2,5,6)") )
+print(4, minFunc(3, "(0,1,2,5,6,7) d -") )
+print(5, minFunc(4, "(3,9,12,15) d (0,1,4,7,8,10,11,14)") )
+print(6, minFunc(4, "(0,1,4,5,7,9,10,11,13,15) d -") )
+print(7, minFunc(4, "(0,1,2,3,4,5,6) d (7,8,9,10,11,12,13,14,15)") )
+
+
+OUTPUT
+------
+
+1 w' OR x
+2 wx'+w'x
+3 w+y OR w+x
+4 wy+w'x'+xy' OR wx+w'y'+x'y
+5 x'z+yz+y'z' OR wy+x'z+y'z' OR wz'+x'z+yz OR wy+wz'+x'z OR x'y'+yz+y'z' OR wz'+x'y'+yz OR wx'+yz+y'z' OR wx'+wz'+yz
+6 wx'y+w'y'+xz+y'z OR wx'y+w'y'+xz+y'z OR wx'y+wz+w'y'+xz OR wx'y+wz+w'y'+xz OR wx'y+wz+w'y'+xz OR wx'y+wz+w'y'+xz
+7 1
